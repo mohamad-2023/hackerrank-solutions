@@ -1,0 +1,24 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+a=input().split()
+b=input().split()
+
+al=list(a)
+bl=list(b)
+li=[]
+tu=()
+for x in al:
+    for y in bl:
+        tu=(int(x),int(y))
+        #li.append(tu)
+        print(tu,end=' ')
+        
+#print(li)
+
+
+#another solution
+from itertools import product
+
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+
+print(*product(a,b))
